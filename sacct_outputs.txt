@@ -1,0 +1,19 @@
+SACCT OUTPUT
+
+#job1
+sacct -M wice -j 64455946 --format=JobID,Submit,Start,Elapsed,MaxRSS,ReqMem,ReqCPUS,AllocCPUS,State DONE :)
+
+JobID                     Submit               Start    Elapsed     MaxRSS     ReqMem  ReqCPUS  AllocCPUS      State 
+------------ ------------------- ------------------- ---------- ---------- ---------- -------- ---------- ---------- 
+64455946     2025-05-06T07:46:34 2025-05-06T07:46:35   01:59:04                34000M       36         36  COMPLETED 
+64455946.ba+ 2025-05-06T07:46:35 2025-05-06T07:46:35   01:59:04  15051464K                  36         36  COMPLETED 
+64455946.ex+ 2025-05-06T07:46:35 2025-05-06T07:46:35   01:59:04         8K                  36         36  COMPLETED 
+
+#job2
+sacct -M wice -j 64457227 --format=JobID,Submit,Start,Elapsed,MaxRSS,ReqMem,ReqCPUS,AllocCPUS,State
+
+JobID                     Submit               Start    Elapsed     MaxRSS     ReqMem  ReqCPUS  AllocCPUS      State 
+------------ ------------------- ------------------- ---------- ---------- ---------- -------- ---------- ---------- 
+64457227     2025-05-06T12:19:59 2025-05-06T12:20:06   00:25:06                34000M       72         72  COMPLETED 
+64457227.ba+ 2025-05-06T12:20:06 2025-05-06T12:20:06   00:25:06  10891432K                  72         72  COMPLETED 
+64457227.ex+ 2025-05-06T12:20:06 2025-05-06T12:20:06   00:25:06        72K                  72         72  COMPLETED
